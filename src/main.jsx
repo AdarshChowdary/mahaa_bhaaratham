@@ -10,13 +10,11 @@ const route = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    children:[
-      {
-        path: '/mahaabhaaratham', element:<Mahaabhaaratham/>,
-      },
-      { path: '/todaystory', element: <TodayStory />, }
-    ]
   },
+  {
+    path: '/mahaabhaaratham', element:<Mahaabhaaratham/>,
+  },
+  { path: '/todaystory', element: <TodayStory />, }
 ]);
 
 createRoot(document.getElementById('root')).render(
