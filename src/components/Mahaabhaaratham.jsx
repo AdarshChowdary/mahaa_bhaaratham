@@ -1,6 +1,6 @@
 import { CircleAlert } from "lucide-react"
 
-const Mahaabharatham = () => {
+const Mahaabhaaratham = () => {
   return (
     <div className="bg-[#1b4965] w-full min-h-[100vh] max-h-fit flex flex-col items-center py-10 gap-5">
         <CircleAlert width={100} height={100} style={{color:"#bee9e8"}}/>
@@ -32,4 +32,4 @@ const Mahaabharatham = () => {
   )
 }
 
-export default Mahaabharatham
+export default Mahaabhaaratham

@@ -4,8 +4,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import Hero from './components/Hero.jsx'
-import Story from './components/Story.jsx'
-import Mahaabharatham from './components/Mahaabharatham.jsx'
+import Mahaabhaaratham from './components/Mahaabhaaratham.jsx'
+import TodayStory from './components/TodayStory.jsx'
 
 const route = createBrowserRouter([
   {
@@ -13,8 +13,8 @@ const route = createBrowserRouter([
     element: <App />,
   },
   { path: '/', element: <Hero/>, },
-  { path: '/mahaa_bhaaratham', element: <Mahaabharatham/>, },
-  { path: '/today_story', element: <Story />, }
+  { path: '/mahaabhaaratham', element: <Mahaabhaaratham/>, },
+  { path: '/todaystory', element: <TodayStory />, }
 ]);
 
 createRoot(document.getElementById('root')).render(

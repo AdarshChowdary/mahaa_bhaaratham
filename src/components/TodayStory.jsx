@@ -1,6 +1,6 @@
-const Story = () => {
+const TodayStory = () => {
   return (
-    <div id="today_story" className="w-full max-h-fit flex flex-col items-center justify-center gap-5 py-10 bg-[#1b4965]">
+    <div id="todaystory" className="w-full max-h-fit flex flex-col items-center justify-center gap-5 py-10 bg-[#1b4965]">
         <h1 className="text-4xl font-bold text-[#bee9e8]">Today&apos;s Story</h1>
         <div className="flex flex-col text-[#62b6cb] text-lg font-extralight w-[75%] m-auto text-justify">
             <p>
@@ -19,4 +19,4 @@ const Story = () => {
   )
 }
 
-export default Story
+export default TodayStory

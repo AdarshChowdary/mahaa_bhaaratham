@@ -11,7 +11,7 @@ const Hero = () => {
           Get started
         </a>
 
-        <a href="/today_story">
+        <a href="/todaystory">
           <button className="hover-underline-animation">
               Today&apos;s Story
           </button>
