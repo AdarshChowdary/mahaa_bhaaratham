@@ -1,14 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Hero from "./components/Hero";
-import LandingPage from "./components/LandingPage";
+import Hero from "./pages/Hero";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-
   return (
     <>
-      <LandingPage/>
-      <Hero/>
-      <Outlet/>
+      <LandingPage />
+      <Hero />
+      <Outlet />
     </>
   );
 };
