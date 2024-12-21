@@ -47,7 +47,7 @@ const CharacterDetails = () => {
                         <div className="space-y-4">
                             <p className="text-lg text-[#62b6cb] font-extralight">{character.description}</p>
                             <div className="character-stats">
-                                <h3 className="text-xl font-semibold mb-2">Stats</h3>
+                                <h3 className="text-xl font-semibold mb-2">Details</h3>
                                 <ul className="space-y-2">
                                     <li>
                                         <p className="font-light text-base"><span className="font-medium">Parents: </span>{character.parents || 'N/A'}</p>
