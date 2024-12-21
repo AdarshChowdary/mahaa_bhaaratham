@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import Hero from "./pages/Hero";
 import LandingPage from "./pages/LandingPage";
 
@@ -7,7 +6,6 @@ const App = () => {
     <>
       <LandingPage />
       <Hero />
-      <Outlet />
     </>
   );
 };

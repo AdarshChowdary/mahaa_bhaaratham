@@ -1,7 +1,12 @@
 const TodayStory = () => {
   return (
     <div id="todaystory" className="w-full max-h-fit flex flex-col items-center justify-center gap-5 py-10 bg-[#1b4965]">
-        <h1 className="text-4xl font-bold text-[#bee9e8]">Today&apos;s Story</h1>
+        <div className="heading-container text-center mb-8">
+                <h2 className="fancy-heading text-4xl font-bold">
+                    Today&apos;s Story
+                </h2>
+            <div className="heading-underline"></div>
+        </div>
         <div className="flex flex-col text-[#62b6cb] text-lg font-extralight w-[75%] m-auto text-justify gap-5">
             <p>
                 The son of Satyavati having, by penance and meditation, analysed the eternal Veda, afterwards composed this holy history, when that learned Brahmarshi of strict vows, the noble Dwaipayana Vyasa, offspring of Parasara, had finished this greatest of narrations, he began to consider how he might teach it to his disciples.</p>
