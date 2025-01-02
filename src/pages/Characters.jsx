@@ -7,7 +7,7 @@ const Characters = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        const scrollSpeeds = [0.7, 0.4, 0.7, 0.4];
+        const scrollSpeeds = [0.75, 0.25, 0.75, 0.25];
         const scrollIntervals = scrollRefs.current.map((ref, index) => {
             const direction = index % 2 === 0 ? 1 : -1;
             return setInterval(() => {
