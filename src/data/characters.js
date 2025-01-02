@@ -8,8 +8,8 @@ import Draupadi from "../assets/characters/Draupadi.jpeg"
 import Karna from "../assets/characters/Karna.jpeg"
 import Dronacharya from "../assets/characters/Dronacharya.jpeg"
 import Bhishma from "../assets/characters/Bhishma.jpeg"
-import Kunti from "../assets/characters/Kunti.jpeg"
 import Gandhaari from "../assets/characters/Gandhaari.jpeg"
+import Kunti from "../assets/characters/Kunti.jpeg"
 
 
 const characters = [
