@@ -9,6 +9,7 @@ import Karna from "../assets/characters/Karna.jpeg"
 import Dronacharya from "../assets/characters/Dronacharya.jpeg"
 import Bhishma from "../assets/characters/Bhishma.jpeg"
 import Gandhaari from "../assets/characters/Gandhaari.jpeg"
+import Kunti from "../assets/characters/Kunti.jpeg"
 
 
 const characters = [
@@ -105,7 +106,7 @@ const characters = [
     {
         name: "Kunti",
         gender: "Female",
-        image: Gandhaari,
+        image: Kunti,
         description:"Kunti, born Pritha, was the queen of Kuru in the Hindu epic Mahabharata. Kunti was married to Pandu and is the mother of Karna, Yudhistara, Bhima, and Arjuna. She is depicted to possess beauty, intelligence and shrewdness. Originally born to the Yadava chief Shurasena, Pritha was adopted by her childless uncle, Kuntibhoja, and subsequently bestowed with the name Kunti. During her adolescence, she garnered the favour of the sage Durvasa, receiving a divine mantra which she could use to invoke any god and bear his child. Intrigued, she employed this mantra to invoke the sun god Surya, resulting in the birth of her son, Karna. Faced with the societal stigma associated with bearing a child out of wedlock, Kunti found herself compelled to relinquish her son to safeguard her honour.",
         parents:"Paandu, Kunti",
         wifes:"Kuntibhoja, Marisha",
