@@ -76,7 +76,7 @@ const CharacterDetails = () => {
                                             </p>
                                         ) : (
                                             <p className="font-light text-base">
-                                                <span className="font-medium">Husband: </span>
+                                                <span className="font-medium">Husband(s): </span>
                                                 {character.husband || 'N/A'}
                                             </p>
                                         )}
