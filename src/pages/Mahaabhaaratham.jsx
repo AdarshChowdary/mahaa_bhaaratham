@@ -2,10 +2,10 @@ import { CircleAlert } from "lucide-react"
 
 const Mahaabhaaratham = () => {
   return (
-    <div className="bg-[#1b4965] w-full min-h-[100vh] max-h-fit flex flex-col items-center py-10 gap-5">
+    <div className="bg-[#1b4965] w-full min-h-[100vh] max-h-fit flex flex-col items-center justify-center py-10 gap-5">
         <CircleAlert width={100} height={100} style={{color:"#bee9e8"}}/>
 
-        <ul className="w-[70%] text-[#62b6cb] font-extralight text-lg list-disc">
+        <ul className="w-[75%] text-[#62b6cb] font-extralight text-lg list-disc">
             <li>
                 <p>वयं वर्तमानकाले महाभारतस्य समग्रं गहनं च अनुभवः प्रदास्यामः।</p>
             </li>
@@ -17,7 +17,7 @@ const Mahaabhaaratham = () => {
             </li>
         </ul>
 
-        <ul className="w-[70%] text-[#62b6cb] font-extralight text-lg list-disc">
+        <ul className="w-[75%] text-[#62b6cb] font-extralight text-lg list-disc">
             <li>
                 <p>We are currently working hard to bring you a comprehensive and immersive experience of the Mahabharata.</p>
             </li>

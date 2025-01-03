@@ -1,13 +1,19 @@
-import { useParams, useNavigate } from "react-router-dom";
-import characters from "../data/characters";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 const CharacterDetails = () => {
     const { name } = useParams();
+    const location = useLocation();
     const navigate = useNavigate();
     
-    const character = characters.find(
-        (char) => char.name.toLowerCase() === name.toLowerCase()
-    );
+    const character = location.state?.character || (() => {
+        const stored = localStorage.getItem('mahabharathamCharacters');
+        if (stored) {
+            const characters = JSON.parse(stored);
+            console.log('Using stored character data');
+            return characters.find(char => char.name.toLowerCase() === name.toLowerCase());
+        }
+        return null;
+    })();
 
     if (!character) {
         return (
@@ -39,24 +45,47 @@ const CharacterDetails = () => {
                             src={character.image}
                             alt={character.name}
                             className="rounded-lg w-full h-auto object-cover shadow-lg"
+                            loading="lazy"
+                            onError={(e) => {
+                                console.error(`Failed to load image for ${character.name}`);
+                                e.target.src = '/placeholder.jpg';
+                            }}
                         />
                     </div>
                     
                     <div className="character-info">
                         <h1 className="text-4xl font-bold mb-4">{character.name}</h1>
                         <div className="space-y-4">
-                            <p className="text-lg text-[#62b6cb] font-extralight">{character.description}</p>
+                            <p className="text-lg text-[#62b6cb] font-extralight">
+                                {character.description}
+                            </p>
                             <div className="character-stats">
                                 <h3 className="text-xl font-semibold mb-2">Details</h3>
                                 <ul className="space-y-2">
                                     <li>
-                                        <p className="font-light text-base"><span className="font-medium">Parents: </span>{character.parents || 'N/A'}</p>
+                                        <p className="font-light text-base">
+                                            <span className="font-medium">Parents: </span>
+                                            {character.parents || 'N/A'}
+                                        </p>
                                     </li>
                                     <li>
-                                        <p className="font-light text-base"><span className="font-medium">Wifes: </span>{character.wifes || 'N/A'}</p>
+                                        {character.gender === "Male" ? (
+                                            <p className="font-light text-base">
+                                                <span className="font-medium">Wives: </span>
+                                                {character.wives || 'N/A'}
+                                            </p>
+                                        ) : (
+                                            <p className="font-light text-base">
+                                                <span className="font-medium">Husband: </span>
+                                                {character.husband || 'N/A'}
+                                            </p>
+                                        )}
                                     </li>
                                     <li>
-                                        <p className="font-light text-base"><span className="font-medium">Children: </span>{character.children || 'N/A'}</p>
+                                        <p className="font-light text-base">
+                                            <span className="font-medium">Children: </span>
+                                            {character.children || 'N/A'}
+                                        </p>
                                     </li>
                                 </ul>
                             </div>

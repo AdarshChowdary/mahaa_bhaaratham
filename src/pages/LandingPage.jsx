@@ -1,4 +1,4 @@
-import KrishnaAndArjuna from "../assets/Krishna_and_Arjuna.jpeg"
+import KrishnaAndArjuna from "/Krishna_and_Arjuna.jpeg"
 
 const LandingPage = () => {
     return (
