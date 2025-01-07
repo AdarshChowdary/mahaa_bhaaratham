@@ -2,7 +2,7 @@ const TodayStory = () => {
   return (
     <div id="todaystory" className="w-full max-h-fit flex flex-col items-center justify-center gap-5 py-10 bg-[#1b4965]">
         <div className="heading-container text-center mb-8">
-                <h2 className="fancy-heading text-4xl font-bold">
+                <h2 className="fancy-heading text-4xl font-bold text-[#bee9e8]">
                     Today&apos;s Story
                 </h2>
             <div className="heading-underline"></div>
