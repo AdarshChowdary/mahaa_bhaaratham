@@ -1,16 +1,20 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import dotenv from 'dotenv';
-import path from 'path';
-
-// Load environment variables
-dotenv.config();
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+  build: {
+    outDir: 'dist',
+    sourcemap: true
   },
-});
+  server: {
+    port: 3000,
+    proxy: {
+      '/api': {
+        target: 'https://fifthveda.vercel.app',
+        changeOrigin: true,
+        secure: false
+      }
+    }
+  }
+})
